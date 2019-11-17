@@ -12,3 +12,6 @@ class Post(models.Model):
     def publish(self):
         self.published_date = timezone.now()
         self.save
+
+    def __str__(self): #use dudner for str, "double underscore"
+        return self.title
