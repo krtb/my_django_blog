@@ -1,6 +1,7 @@
 # MY ADDITIONS
 myvenv/
 .vscode
+localStorage.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
