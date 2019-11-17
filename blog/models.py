@@ -7,3 +7,4 @@ class Post(models.Model):
     title = models.CharField(max_length=200) #define text with limited amount of characters
     text = models.TextField() #long text with out limit
     create_date = models.DateTimeField(default=timezone.now) 
+    published_date = models.DateTimeField(blank=True, null=True)
