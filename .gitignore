@@ -2,6 +2,10 @@
 myvenv/
 .vscode
 localStorage.py
+.DS_Store
+/static
+*~
+*.pyc
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
