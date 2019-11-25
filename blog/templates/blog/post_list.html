@@ -1,23 +1,32 @@
+{% load static %}
 <html>
     <head>
-        <title>My blog</title>
+        <title>Kurt Bauer</title>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Kurt's Blog</a></h1>
-        </div>
-
-        {% for post in posts %}
+        <!-- MY ADD-ONS -->
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <!-- FONT -->
+        <link href="https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap" rel="stylesheet">
+        
+        <div class="outer-parent-container" > 
+            <div class="inner-child">
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <h1><a href="/">Memory Leak</a></h1>
+                <p>A personal blog by Kurt Bauer. I remember in 0s and 1s.</p>
+            </div>
+
+            {% for post in posts %}
+            <div>
                 <h2><a href="">{{ post.title }}</a></h2>
+                <p>published: {{ post.published_date }}</p>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
-        {% endfor %}
+            {% endfor %}
+            </div>
+        </div>
     </body>
 </html>
