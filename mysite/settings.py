@@ -120,4 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # add path for static files and CSS
-STATIC_ROOT = os.path.join(BASE_DIR, 'blog/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
