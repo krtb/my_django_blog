@@ -120,4 +120,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # add path for static files and CSS
-STATIC_ROOT = os.path.join(BASE_DIR, 'http://kurtbauer.pythonanywhere.com/static/css/base.css')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
