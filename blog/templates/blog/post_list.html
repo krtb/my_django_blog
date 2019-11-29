@@ -1,8 +1,7 @@
 {% load static %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <title>Kurt Bauer</title>
-        <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Bootstrap CSS -->
@@ -11,22 +10,31 @@
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
         <!-- FONT -->
         <link href="https://fonts.googleapis.com/css?family=Sulphur+Point:400,700&display=swap" rel="stylesheet">
-        
-        <div class="outer-parent-container" > 
-            <div class="inner-child">
+        <title>Kurt Bauer</title>
+        <!-- Required meta tags -->
+    </head>
+    <body class="outer-parent-container">
+        <div class="inner-child"> 
             <div>
-                <h1><a href="/">Memory Leak</a></h1>
-                <p>A personal blog by Kurt Bauer. I remember in 0s and 1s.</p>
+                <h1>Memory Leak</h1>
+                <p>A personal blog by Kurt Bauer. 
+                    <br />
+                I remember in 0s and 1s.</p>
             </div>
 
             {% for post in posts %}
             <div>
-                <h2><a href="">{{ post.title }}</a></h2>
+                <h2>{{ post.title }}</h2>
                 <p>published: {{ post.published_date }}</p>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
+
             {% endfor %}
-            </div>
+            <footer>
+                <ul>
+                    Resume Twitter Github DEV.TO BLOG LinkedIn 
+                </ul>
+            </footer>
         </div>
     </body>
 </html>
