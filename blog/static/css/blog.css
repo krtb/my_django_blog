@@ -1,27 +1,49 @@
 html, body {
     background-color: #143250;
-    height: 100%;
 }
+
+/* FLEX */
+.outer-parent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-child {
+  max-width: 50%;
+  /* height: 60%; */
+}
+
+h1, a {
+  /* color: #46A0FF; */
+  color: #eae2b7;
+  font-size: 2.5em;
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: 700;
+}
+
+h2, a, footer {
+  color: #eae2b7c5;
+  font-size: 1.5em;
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: 400;
+}
+
+/* ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 15px;
+} */
 
 p {
     color: #FFF;
     font-family: 'Sulphur Point', sans-serif;
     font-weight: 400;
     font-size: 16px;
-}
-
-/* FLEX */
-.outer-parent-container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inner-child {
-    width: 50%;
-    height: 60%;
-    text-align: center;
 }
 
 /* unvisited link */
@@ -44,20 +66,6 @@ p {
     color: #5E9FF8;
   } */
 
-h1 a {
-    /* color: #46A0FF; */
-    color: #eae2b7;
-    font-size: 1.5em;
-    font-family: 'Sulphur Point', sans-serif;
-    font-weight: 700;
-}
-
-h2, a {
-    color: #eae2b7c5;
-    font-size: 1.5em;
-    font-family: 'Sulphur Point', sans-serif;
-    font-weight: 400;
-}
 
 
 /* CENTERING */
